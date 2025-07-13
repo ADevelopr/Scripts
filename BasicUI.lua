@@ -24,7 +24,7 @@ local Window = Rayfield:CreateWindow({
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = false, -- Set this to true to use our key system
+   KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
       Title = "Who made this?",
       Subtitle = "And are you him?",
@@ -36,8 +36,11 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
-local Section = Tab:CreateSection("Section Example")
+local Tab = Window:CreateTab("Tab Example", "info")
+local Section = Tab:CreateSection("Fourms")
+local Label = Tab:CreateLabel("Will be added later...")
+
+local Tab = Window:CreateTab("Skins (Custom)") -- Title, Image
 
 
 Rayfield:LoadConfiguration()
