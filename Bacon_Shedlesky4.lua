@@ -3,7 +3,7 @@ Shedletsky4 = game.Workspace.Players.Survivors
 ShedletskyTrue = Shedletsky4:FindFirstChild("Shedletsky")
 
 if ShedletskyTrue == false then
-    task.wait(30)
+    task.wait(10)
     Shedletsky:FindFirstChild("Shedlesky")
 end
 
