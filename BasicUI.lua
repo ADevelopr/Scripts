@@ -1,3 +1,5 @@
+--loadstring(game:HttpGet('https://raw.githubusercontent.com/IAmVeryNewToThisWebsite/Scripts/refs/heads/main/BasicUI.lua?token=GHSAT0AAAAAADF5KSPQSKIFQ32EMB3HRGNQ2DTFWPA')()
+
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Basic UI",
