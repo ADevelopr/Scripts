@@ -1,4 +1,4 @@
---finding shedlesky
+--[[finding shedlesky (WIP)
 Shedletsky4 = game.Workspace.Players.Survivors
 ShedletskyTrue = Shedletsky4:FindFirstChild("Shedletsky")
 
@@ -7,7 +7,7 @@ if ShedletskyTrue == false then
     Shedletsky:FindFirstChild("Shedlesky")
 end
 
-if ShedletskyTrue == true then
+if ShedletskyTrue == true then]]
     -- Color
     game.Workspace.Players.Survivors.Shedletsky["Body Colors"].HeadColor = BrickColor.new("Institutional white")
     game.Workspace.Players.Survivors.Shedletsky["Body Colors"].LeftArmColor = BrickColor.new("Institutional white")
@@ -35,4 +35,4 @@ if ShedletskyTrue == true then
 
     game.Workspace.Players.Survivors.Shedletsky.Rings.Handle.Mesh.MeshId = "rbxassetid://105414775684988"
     game.Workspace.Players.Survivors.Shedletsky.Rings.Handle.Mesh.TextureId = "rbxassetid://92958485388046"
-end
+--end
