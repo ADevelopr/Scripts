@@ -21,7 +21,7 @@ game.Workspace.Players.Survivors.Shedletsky.ShedHair.Handle.Mesh.TextureId = "rb
 game.Workspace.Players.Survivors.Shedletsky.Chicken.Mesh.MeshId = "http://www.roblox.com/asset/?id=22589477"
 game.Workspace.Players.Survivors.Shedletsky.Chicken.Mesh.TextureId = "http://www.roblox.com/asset/?id=22589467"
 game.Workspace.Players.Survivors.Shedletsky.Sword.Highlight.FillTransparency = 1
-game.Workspace.Players.Survivors.Shedletsky.Sword.TextureId = "http://www.roblox.com/asset/?id=12224218"
+game.Workspace.Players.Survivors.Shedletsky.Sword.Mesh.TextureId = "http://www.roblox.com/asset/?id=12224218"
 
 --Cape
 
