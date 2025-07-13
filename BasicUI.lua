@@ -42,7 +42,7 @@ local Label = TabInfo:CreateLabel("Will be added later...")
 local Section = TabInfo:CreateSection("About Basic UI")
 local Label = TabInfo:CreateLabel("Basic UI is not going to be easy when editing if you intend to remix my ui. Basic UI is a solo project and is going to have universal scripts like speed or health.")
 local Section = TabInfo:CreateSection("Loadstring")
-local Label = TabInfo:CreateLabel("Will be added later...")
+local Label = TabInfo:CreateLabel("loadstring(game:HttpGet(https://raw.githubusercontent.com/IAmVeryNewToThisWebsite/Scripts/refs/heads/main/BasicUI.lua))()")
 
 local TabSkins = Window:CreateTab("Skins (Custom)") -- Title, Image
 local Button = TabSkins:CreateButton({
