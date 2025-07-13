@@ -1,13 +1,13 @@
---[[finding shedlesky (WIP)
-Shedletsky4 = game.Workspace.Players.Survivors
+--finding shedlesky
+--[[Shedletsky4 = game.Workspace.Players.Survivors
 ShedletskyTrue = Shedletsky4:FindFirstChild("Shedletsky")
 
 if ShedletskyTrue == false then
-    task.wait(10)
+    task.wait(30)
     Shedletsky:FindFirstChild("Shedlesky")
 end
 
-if ShedletskyTrue == true then]]
+if ShedletskyTrue == then]]
 -- Color
 game.Workspace.Players.Survivors.Shedletsky["Body Colors"].HeadColor = BrickColor.new("Institutional white")
 game.Workspace.Players.Survivors.Shedletsky["Body Colors"].LeftArmColor = BrickColor.new("Institutional white")
@@ -30,6 +30,8 @@ game.Workspace.Players.Survivors.Shedletsky.ShedHair.Handle.Mesh.TextureId = "rb
 
 game.Workspace.Players.Survivors.Shedletsky.Chicken.Mesh.MeshId = "http://www.roblox.com/asset/?id=22589477"
 game.Workspace.Players.Survivors.Shedletsky.Chicken.Mesh.TextureId = "http://www.roblox.com/asset/?id=22589467"
+game.Workspace.Players.Survivors.Shedletsky.Sword.Highlight.FillTransparency = 1
+game.Workspace.Players.Survivors.Shedletsky.Sword.MeshId = "http://www.roblox.com/asset/?id=12224218"
 
 --Cape
 
