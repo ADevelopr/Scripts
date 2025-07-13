@@ -36,18 +36,16 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("Request and Info", "info")
-local Section = Tab:CreateSection("Fourms")
-local Label = Tab:CreateLabel("Will be added later...")
-local Section = Tab:CreateSection("About Basic UI")
-local Label = Tab:CreateLabel("Basic UI is not going to be easy when editing if you intend to remix my ui. Basic UI is a solo project and is going to have universal scripts like speed or health.")
+local TabInfo = Window:CreateTab("Request and Info", "info")
+local Section = TabInfo:CreateSection("Fourms")
+local Label = TabInfo:CreateLabel("Will be added later...")
+local Section = TabInfo:CreateSection("About Basic UI")
+local Label = TabInfo:CreateLabel("Basic UI is not going to be easy when editing if you intend to remix my ui. Basic UI is a solo project and is going to have universal scripts like speed or health.")
 
-local Tab = Window:CreateTab("Skins (Custom)") -- Title, Image
-local Button = Tab:CreateButton({
+local TabSkins = Window:CreateTab("Skins (Custom)") -- Title, Image
+local Button = TabSkins:CreateButton({
    Name = "The Creator (M4)",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/IAmVeryNewToThisWebsite/Scripts/refs/heads/main/Bacon_Shedlesky4.lua'))()
+   end
 })
-
-
-Rayfield:LoadConfiguration()
