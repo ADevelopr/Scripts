@@ -4,7 +4,7 @@ game.Players.PlayerAdded:Connect(function(player)
 	leaderstats.Parent = player
 	
 	local timer = Instance.new("IntValue")
-	timer.Name = "Coins"
+	timer.Name = "Time"
 	timer.Value = 0
 	timer.Parent = leaderstats
 	
