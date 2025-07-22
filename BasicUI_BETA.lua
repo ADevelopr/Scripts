@@ -24,13 +24,13 @@ TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.Parent = MainFrame
 
 local LocalScript = Instance.new("LocalScript")
-LocalScript.Source = "script.Parent.MouseButton1Click:Connect(function()
+LocalScript.Source = script.Parent.MouseButton1Click:Connect(function()
 	local gui = script.Parent:FindFirstAncestorOfClass("ScreenGui")
 	if gui then
 		gui:Destroy()
 	end
 end)
-"
+
 LocalScript.Parent = TextButton
 
 local UICorner = Instance.new("UICorner")
@@ -115,4 +115,3 @@ TextLabel.Parent = Topbar
 
 local UIDragDetector = Instance.new("UIDragDetector")
 UIDragDetector.Parent = MainFrame
-
