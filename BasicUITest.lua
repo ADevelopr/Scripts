@@ -4,37 +4,27 @@
 -- Instances:
 
 local BasicUI = Instance.new("ScreenGui")
-local MainFrame = Instance.new("Frame")
+local HideShow = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
-local Frame = Instance.new("Frame")
-local Tabs = Instance.new("Frame")
+local Ui = Instance.new("Frame")
+local Tab_Home = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local theUI1 = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
-local Topbar = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")-- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
-local BasicUI = Instance.new("ScreenGui")
-local MainFrame = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local Frame = Instance.new("Frame")
 local Tabs = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local theUI1 = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
+local Universal = Instance.new("ImageButton")
+local Home = Instance.new("ImageButton")
 local Topbar = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
-local theUI2 = Instance.new("Frame")
+local Tab_Universal = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
-local Topbar_2 = Instance.new("Frame")
+local Tabs_2 = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
-local TextButton = Instance.new("TextButton")
+local Universal_2 = Instance.new("ImageButton")
+local Home_2 = Instance.new("ImageButton")
+local Topbar_2 = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -42,53 +32,82 @@ BasicUI.Name = "BasicUI"
 BasicUI.Parent = game.Players.LocalPlayer.PlayerGui
 BasicUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = BasicUI
-MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MainFrame.BackgroundTransparency = 1.000
-MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(-0.370041043, 526, -0.275245816, 185)
-MainFrame.Size = UDim2.new(0, 18, 0, 18)
+HideShow.Name = "Hide/Show"
+HideShow.Parent = BasicUI
+HideShow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HideShow.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HideShow.BorderSizePixel = 0
+HideShow.Position = UDim2.new(0.446212739, 0, -0.00161526387, 0)
+HideShow.Size = UDim2.new(0, 95, 0, 25)
+HideShow.ZIndex = 3
+HideShow.Font = Enum.Font.SourceSans
+HideShow.Text = "Show/Hide"
+HideShow.TextColor3 = Color3.fromRGB(75, 124, 125)
+HideShow.TextSize = 25.000
+HideShow.TextXAlignment = Enum.TextXAlignment.Right
 
-UICorner.Parent = MainFrame
+UICorner.Parent = HideShow
 
-Frame.Parent = MainFrame
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.BackgroundTransparency = 0.750
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(24.5664139, 0, 0.444442749, 0)
-Frame.Size = UDim2.new(0, 328, 0, 209)
+Ui.Name = "Ui"
+Ui.Parent = BasicUI
+Ui.BackgroundColor3 = Color3.fromRGB(126, 159, 177)
+Ui.BackgroundTransparency = 0.100
+Ui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ui.BorderSizePixel = 0
+Ui.Position = UDim2.new(0.276611686, 0, 0.207048461, 0)
+Ui.Size = UDim2.new(0, 397, 0, 266)
+
+Tab_Home.Name = "Tab_Home"
+Tab_Home.Parent = Ui
+Tab_Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab_Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab_Home.BorderSizePixel = 0
+Tab_Home.Position = UDim2.new(0.151133507, 0, 0.157894731, 0)
+Tab_Home.Size = UDim2.new(0, 329, 0, 217)
+
+UICorner_2.Parent = Tab_Home
 
 Tabs.Name = "Tabs"
-Tabs.Parent = MainFrame
+Tabs.Parent = Tab_Home
 Tabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tabs.BackgroundTransparency = 0.500
 Tabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tabs.BorderSizePixel = 0
-Tabs.Position = UDim2.new(21.833334, 0, -1.66666663, 0)
-Tabs.Size = UDim2.new(0, 39, 0, 248)
+Tabs.Position = UDim2.new(-0.148920223, 0, -0.169238105, 0)
+Tabs.Size = UDim2.new(0, 39, 0, 253)
+Tabs.ZIndex = 2
 
-UICorner_2.Parent = Tabs
+UICorner_3.Parent = Tabs
 
-theUI1.Name = "theUI1"
-theUI1.Parent = MainFrame
-theUI1.BackgroundColor3 = Color3.fromRGB(126, 159, 177)
-theUI1.BackgroundTransparency = 0.100
-theUI1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-theUI1.BorderSizePixel = 0
-theUI1.Position = UDim2.new(21.2886372, 0, -2.25476241, 0)
-theUI1.Size = UDim2.new(0, 397, 0, 266)
+Universal.Name = "Universal"
+Universal.Parent = Tabs
+Universal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Universal.BackgroundTransparency = 1.000
+Universal.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Universal.BorderSizePixel = 0
+Universal.Position = UDim2.new(0.179487184, 0, 0.119055226, 0)
+Universal.Size = UDim2.new(0, 25, 0, 25)
+Universal.ZIndex = 0
+Universal.Image = "rbxassetid://128274346861131"
 
-UICorner_3.Parent = theUI1
+Home.Name = "Home"
+Home.Parent = Tabs
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0.179487184, 0, 0.0222332012, 0)
+Home.Size = UDim2.new(0, 25, 0, 25)
+Home.Image = "rbxassetid://91358839102598"
 
 Topbar.Name = "Topbar"
-Topbar.Parent = theUI1
+Topbar.Parent = Tab_Home
 Topbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Topbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Topbar.BorderSizePixel = 0
-Topbar.Position = UDim2.new(0.148614615, 0, 0.0338345878, 0)
+Topbar.Position = UDim2.new(-0.00163589057, 0, -0.175439999, 0)
 Topbar.Size = UDim2.new(0, 329, 0, 30)
+Topbar.ZIndex = 2
 
 UICorner_4.Parent = Topbar
 
@@ -99,239 +118,126 @@ TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0.0425531901, 0, 0.233333334, 0)
 TextLabel.Size = UDim2.new(0, 314, 0, 15)
 TextLabel.Font = Enum.Font.Cartoon
-TextLabel.Text = "Basic UI"
+TextLabel.Text = "Basic UI - Home"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 25.000
 TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 
-theUI2.Name = "theUI2"
-theUI2.Parent = MainFrame
-theUI2.BackgroundColor3 = Color3.fromRGB(126, 159, 177)
-theUI2.BackgroundTransparency = 0.100
-theUI2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-theUI2.BorderSizePixel = 0
-theUI2.Position = UDim2.new(21.2875824, 0, -2.25476241, 0)
-theUI2.Size = UDim2.new(0, 397, 0, 266)
-theUI2.Visible = false
+Tab_Universal.Name = "Tab_Universal"
+Tab_Universal.Parent = Ui
+Tab_Universal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab_Universal.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab_Universal.BorderSizePixel = 0
+Tab_Universal.Position = UDim2.new(0.151133507, 0, 0.157894731, 0)
+Tab_Universal.Size = UDim2.new(0, 329, 0, 217)
+Tab_Universal.Visible = false
 
-UICorner_5.Parent = theUI2
+UICorner_5.Parent = Tab_Universal
+
+Tabs_2.Name = "Tabs"
+Tabs_2.Parent = Tab_Universal
+Tabs_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tabs_2.BackgroundTransparency = 0.500
+Tabs_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tabs_2.BorderSizePixel = 0
+Tabs_2.Position = UDim2.new(-0.148920223, 0, -0.169238105, 0)
+Tabs_2.Size = UDim2.new(0, 39, 0, 253)
+Tabs_2.ZIndex = 2
+
+UICorner_6.Parent = Tabs_2
+
+Universal_2.Name = "Universal"
+Universal_2.Parent = Tabs_2
+Universal_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Universal_2.BackgroundTransparency = 1.000
+Universal_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Universal_2.BorderSizePixel = 0
+Universal_2.Position = UDim2.new(0.179487184, 0, 0.119055226, 0)
+Universal_2.Size = UDim2.new(0, 25, 0, 25)
+Universal_2.ZIndex = 0
+Universal_2.Image = "rbxassetid://128274346861131"
+
+Home_2.Name = "Home"
+Home_2.Parent = Tabs_2
+Home_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home_2.BackgroundTransparency = 1.000
+Home_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home_2.BorderSizePixel = 0
+Home_2.Position = UDim2.new(0.179487184, 0, 0.0222332012, 0)
+Home_2.Size = UDim2.new(0, 25, 0, 25)
+Home_2.Image = "rbxassetid://91358839102598"
 
 Topbar_2.Name = "Topbar"
-Topbar_2.Parent = theUI2
+Topbar_2.Parent = Tab_Universal
 Topbar_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Topbar_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Topbar_2.BorderSizePixel = 0
-Topbar_2.Position = UDim2.new(0.148614615, 0, 0.0338345878, 0)
+Topbar_2.Position = UDim2.new(-0.00163589057, 0, -0.175439999, 0)
 Topbar_2.Size = UDim2.new(0, 329, 0, 30)
+Topbar_2.ZIndex = 2
 
-UICorner_6.Parent = Topbar_2
+UICorner_7.Parent = Topbar_2
 
 TextLabel_2.Parent = Topbar_2
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.0212765951, 0, 0.233333334, 0)
+TextLabel_2.Position = UDim2.new(0.0425531901, 0, 0.233333334, 0)
 TextLabel_2.Size = UDim2.new(0, 314, 0, 15)
 TextLabel_2.Font = Enum.Font.Cartoon
-TextLabel_2.Text = "Basic UI"
+TextLabel_2.Text = "Basic UI - Universal"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextSize = 25.000
 TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 
-TextButton.Parent = MainFrame
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 0.750
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(37.1111107, 0, -1.66666663, 0)
-TextButton.Size = UDim2.new(0, 95, 0, 25)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Show/Hide"
-TextButton.TextColor3 = Color3.fromRGB(75, 124, 125)
-TextButton.TextSize = 25.000
-TextButton.TextXAlignment = Enum.TextXAlignment.Right
-
-UICorner_7.Parent = TextButton
-
 -- Scripts:
 
-local function TYNCROG_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
+local function WADG_fake_script() -- HideShow.Hide or Show Script 
+	local script = Instance.new('LocalScript', HideShow)
 
 	local button = script.Parent
-	local mainFrame = button.Parent
-	
-	-- Store initial visibility states
-	local originalVisibility = {}
-	for _, child in ipairs(mainFrame:GetChildren()) do
-		if child ~= button and child:IsA("GuiObject") then
-			originalVisibility[child] = child.Visible
-		end
-	end
+	local ui = script.Parent.Parent:FindFirstChild("Ui")
 	
 	local isVisible = true
 	
 	button.MouseButton1Click:Connect(function()
-		isVisible = not isVisible
-	
-		for child, wasVisible in pairs(originalVisibility) do
-			child.Visible = isVisible and wasVisible
+		if ui then
+			isVisible = not isVisible
+			ui.Visible = isVisible
 		end
 	end)
 	
 end
-coroutine.wrap(TYNCROG_fake_script)()
-local TextLabel = Instance.new("TextLabel")
-local theUI2 = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
-local Topbar_2 = Instance.new("Frame")
-local UICorner_6 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
-local TextButton = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
-
---Properties:
-
-BasicUI.Name = "BasicUI"
-BasicUI.Parent = game.Players.LocalPlayer.PlayerGui
-BasicUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = BasicUI
-MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MainFrame.BackgroundTransparency = 1.000
-MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(-0.370041043, 526, -0.275245816, 185)
-MainFrame.Size = UDim2.new(0, 18, 0, 18)
-
-UICorner.Parent = MainFrame
-
-Frame.Parent = MainFrame
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.BackgroundTransparency = 0.750
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(24.5664139, 0, 0.444442749, 0)
-Frame.Size = UDim2.new(0, 328, 0, 209)
-
-Tabs.Name = "Tabs"
-Tabs.Parent = MainFrame
-Tabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Tabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Tabs.BorderSizePixel = 0
-Tabs.Position = UDim2.new(21.833334, 0, -1.66666663, 0)
-Tabs.Size = UDim2.new(0, 39, 0, 248)
-
-UICorner_2.Parent = Tabs
-
-theUI1.Name = "theUI1"
-theUI1.Parent = MainFrame
-theUI1.BackgroundColor3 = Color3.fromRGB(126, 159, 177)
-theUI1.BackgroundTransparency = 0.100
-theUI1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-theUI1.BorderSizePixel = 0
-theUI1.Position = UDim2.new(21.2886372, 0, -2.25476241, 0)
-theUI1.Size = UDim2.new(0, 397, 0, 266)
-
-UICorner_3.Parent = theUI1
-
-Topbar.Name = "Topbar"
-Topbar.Parent = theUI1
-Topbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Topbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Topbar.BorderSizePixel = 0
-Topbar.Position = UDim2.new(0.148614615, 0, 0.0338345878, 0)
-Topbar.Size = UDim2.new(0, 329, 0, 30)
-
-UICorner_4.Parent = Topbar
-
-TextLabel.Parent = Topbar
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.0425531901, 0, 0.233333334, 0)
-TextLabel.Size = UDim2.new(0, 314, 0, 15)
-TextLabel.Font = Enum.Font.Cartoon
-TextLabel.Text = "Basic UI"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 25.000
-TextLabel.TextXAlignment = Enum.TextXAlignment.Left
-
-theUI2.Name = "theUI2"
-theUI2.Parent = MainFrame
-theUI2.BackgroundColor3 = Color3.fromRGB(126, 159, 177)
-theUI2.BackgroundTransparency = 0.100
-theUI2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-theUI2.BorderSizePixel = 0
-theUI2.Position = UDim2.new(21.2875824, 0, -2.25476241, 0)
-theUI2.Size = UDim2.new(0, 397, 0, 266)
-theUI2.Visible = false
-
-UICorner_5.Parent = theUI2
-
-Topbar_2.Name = "Topbar"
-Topbar_2.Parent = theUI2
-Topbar_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Topbar_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Topbar_2.BorderSizePixel = 0
-Topbar_2.Position = UDim2.new(0.148614615, 0, 0.0338345878, 0)
-Topbar_2.Size = UDim2.new(0, 329, 0, 30)
-
-UICorner_6.Parent = Topbar_2
-
-TextLabel_2.Parent = Topbar_2
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.0212765951, 0, 0.233333334, 0)
-TextLabel_2.Size = UDim2.new(0, 314, 0, 15)
-TextLabel_2.Font = Enum.Font.Cartoon
-TextLabel_2.Text = "Basic UI"
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextSize = 25.000
-TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
-
-TextButton.Parent = MainFrame
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 0.750
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(37.1111107, 0, -1.66666663, 0)
-TextButton.Size = UDim2.new(0, 95, 0, 25)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Show/Hide"
-TextButton.TextColor3 = Color3.fromRGB(75, 124, 125)
-TextButton.TextSize = 25.000
-TextButton.TextXAlignment = Enum.TextXAlignment.Right
-
-UICorner_7.Parent = TextButton
-
--- Scripts:
-
-local function MUNM_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
+coroutine.wrap(WADG_fake_script)()
+local function YLFVVA_fake_script() -- Universal.Change to Uni 
+	local script = Instance.new('LocalScript', Universal)
 
 	local button = script.Parent
-	local mainFrame = button.Parent
-	
-	-- Store initial visibility states
-	local originalVisibility = {}
-	for _, child in ipairs(mainFrame:GetChildren()) do
-		if child ~= button and child:IsA("GuiObject") then
-			originalVisibility[child] = child.Visible
-		end
-	end
-	
-	local isVisible = true
+	local tabToShow = "Tab_Universal" -- Change this to the tab you want to show
+	local ui = button:FindFirstAncestor("Ui")
 	
 	button.MouseButton1Click:Connect(function()
-		isVisible = not isVisible
-	
-		for child, wasVisible in pairs(originalVisibility) do
-			child.Visible = isVisible and wasVisible
+		for _, child in ui:GetChildren() do
+			if child:IsA("Frame") and child.Name:match("^Tab_") then
+				child.Visible = (child.Name == tabToShow)
+			end
 		end
 	end)
-	
 end
-coroutine.wrap(MUNM_fake_script)()
+coroutine.wrap(YLFVVA_fake_script)()
+local function IKQVZE_fake_script() -- Home_2.Change to Hom 
+	local script = Instance.new('LocalScript', Home_2)
+
+	local button = script.Parent
+	local tabToShow = "Tab_Home" -- Change this to the tab you want to show
+	local ui = button:FindFirstAncestor("Ui")
+	
+	button.MouseButton1Click:Connect(function()
+		for _, child in ui:GetChildren() do
+			if child:IsA("Frame") and child.Name:match("^Tab_") then
+				child.Visible = (child.Name == tabToShow)
+			end
+		end
+	end)
+end
+coroutine.wrap(IKQVZE_fake_script)()
