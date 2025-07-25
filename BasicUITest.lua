@@ -6,7 +6,6 @@
 local BasicUI = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local UiDragDetector = Instance.new("UIDragDetector")
 local theUI1 = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
 local Topbar = Instance.new("Frame")
@@ -37,7 +36,6 @@ MainFrame.Position = UDim2.new(-0.339264393, 526, -0.235598221, 185)
 MainFrame.Size = UDim2.new(0, 18, 0, 18)
 
 UICorner.Parent = MainFrame
-UIDragDetector.Parent = MainFrame
 
 theUI1.Name = "theUI1"
 theUI1.Parent = MainFrame
