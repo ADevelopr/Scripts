@@ -44,7 +44,7 @@ Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 0.750
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(-7.71136475, 0, 14.8333321, 0)
+Frame.Position = UDim2.new(24.5664139, 0, 0.444442749, 0)
 Frame.Size = UDim2.new(0, 328, 0, 209)
 
 Tabs.Name = "Tabs"
@@ -52,7 +52,7 @@ Tabs.Parent = MainFrame
 Tabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Tabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tabs.BorderSizePixel = 0
-Tabs.Position = UDim2.new(-10.4444447, 0, 12.7222223, 0)
+Tabs.Position = UDim2.new(21.833334, 0, -1.66666663, 0)
 Tabs.Size = UDim2.new(0, 39, 0, 248)
 
 UICorner_2.Parent = Tabs
@@ -63,7 +63,7 @@ theUI1.BackgroundColor3 = Color3.fromRGB(126, 159, 177)
 theUI1.BackgroundTransparency = 0.100
 theUI1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 theUI1.BorderSizePixel = 0
-theUI1.Position = UDim2.new(-10.9891424, 0, 12.1341267, 0)
+theUI1.Position = UDim2.new(21.2886372, 0, -2.25476241, 0)
 theUI1.Size = UDim2.new(0, 397, 0, 266)
 
 UICorner_3.Parent = theUI1
@@ -96,7 +96,7 @@ theUI2.BackgroundColor3 = Color3.fromRGB(126, 159, 177)
 theUI2.BackgroundTransparency = 0.100
 theUI2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 theUI2.BorderSizePixel = 0
-theUI2.Position = UDim2.new(-10.9901953, 0, 12.1341267, 0)
+theUI2.Position = UDim2.new(21.2875824, 0, -2.25476241, 0)
 theUI2.Size = UDim2.new(0, 397, 0, 266)
 theUI2.Visible = false
 
@@ -129,7 +129,7 @@ TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 0.750
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(4.83333492, 0, 12.7222223, 0)
+TextButton.Position = UDim2.new(37.1111107, 0, -1.66666663, 0)
 TextButton.Size = UDim2.new(0, 95, 0, 25)
 TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = "Show/Hide"
@@ -141,7 +141,7 @@ UICorner_7.Parent = TextButton
 
 -- Scripts:
 
-local function FRQCL_fake_script() -- TextButton.LocalScript 
+local function MUNM_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent
@@ -166,4 +166,4 @@ local function FRQCL_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(FRQCL_fake_script)()
+coroutine.wrap(MUNM_fake_script)()
