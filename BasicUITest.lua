@@ -29,7 +29,7 @@ local UICorner_7 = Instance.new("UICorner")
 --Properties:
 
 BasicUI.Name = "BasicUI"
-BasicUI.Parent = game.Players.AngelTheBroy.PlayerGui
+BasicUI.Parent = game.Players.LocalPlayer.PlayerGui
 BasicUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Ui.Name = "Ui"
