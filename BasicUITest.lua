@@ -67,6 +67,7 @@ Tab_Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab_Home.BorderSizePixel = 0
 Tab_Home.Position = UDim2.new(0.151133507, 0, 0.157894731, 0)
 Tab_Home.Size = UDim2.new(0, 329, 0, 217)
+Tab_Home.Visible = false
 
 UICorner.Parent = Tab_Home
 
@@ -143,7 +144,6 @@ Tab_Universal.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab_Universal.BorderSizePixel = 0
 Tab_Universal.Position = UDim2.new(0.151133507, 0, 0.157894731, 0)
 Tab_Universal.Size = UDim2.new(0, 329, 0, 217)
-Tab_Universal.Visible = false
 
 UICorner_4.Parent = Tab_Universal
 
@@ -223,7 +223,9 @@ _64Speed.Size = UDim2.new(0, 100, 0, 25)
 _64Speed.Font = Enum.Font.Unknown
 _64Speed.Text = "64 speed"
 _64Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+_64Speed.TextScaled = true
 _64Speed.TextSize = 20.000
+_64Speed.TextWrapped = true
 
 UICorner_7.Parent = _64Speed
 
@@ -314,7 +316,9 @@ LearnLua.Size = UDim2.new(0, 100, 0, 25)
 LearnLua.Font = Enum.Font.Unknown
 LearnLua.Text = "Learn code"
 LearnLua.TextColor3 = Color3.fromRGB(0, 0, 0)
+LearnLua.TextScaled = true
 LearnLua.TextSize = 20.000
+LearnLua.TextWrapped = true
 
 UICorner_11.Parent = LearnLua
 
@@ -345,7 +349,7 @@ UIAspectRatioConstraint_3.AspectRatio = 2.212
 
 -- Scripts:
 
-local function SORGCPY_fake_script() -- Universal.Change to Uni 
+local function UVOJEBB_fake_script() -- Universal.Change to Uni 
 	local script = Instance.new('LocalScript', Universal)
 
 	local button = script.Parent
@@ -360,8 +364,8 @@ local function SORGCPY_fake_script() -- Universal.Change to Uni
 		end
 	end)
 end
-coroutine.wrap(SORGCPY_fake_script)()
-local function MOUDXVN_fake_script() -- Other.Change to Oth 
+coroutine.wrap(UVOJEBB_fake_script)()
+local function USWX_fake_script() -- Other.Change to Oth 
 	local script = Instance.new('LocalScript', Other)
 
 	local button = script.Parent
@@ -376,8 +380,8 @@ local function MOUDXVN_fake_script() -- Other.Change to Oth
 		end
 	end)
 end
-coroutine.wrap(MOUDXVN_fake_script)()
-local function WJEP_fake_script() -- Home_2.Change to Hom 
+coroutine.wrap(USWX_fake_script)()
+local function DKVEYD_fake_script() -- Home_2.Change to Hom 
 	local script = Instance.new('LocalScript', Home_2)
 
 	local button = script.Parent
@@ -392,8 +396,8 @@ local function WJEP_fake_script() -- Home_2.Change to Hom
 		end
 	end)
 end
-coroutine.wrap(WJEP_fake_script)()
-local function FKMFDDE_fake_script() -- Other_2.Change to Oth 
+coroutine.wrap(DKVEYD_fake_script)()
+local function RFRMYGU_fake_script() -- Other_2.Change to Oth 
 	local script = Instance.new('LocalScript', Other_2)
 
 	local button = script.Parent
@@ -408,9 +412,9 @@ local function FKMFDDE_fake_script() -- Other_2.Change to Oth
 		end
 	end)
 end
-coroutine.wrap(FKMFDDE_fake_script)()
+coroutine.wrap(RFRMYGU_fake_script)()
 -- _64Speed.Script is disabled.
-local function CJAQ_fake_script() -- _64Speed.LocalScript 
+local function MJJT_fake_script() -- _64Speed.LocalScript 
 	local script = Instance.new('LocalScript', _64Speed)
 
 	local Players = game:GetService("Players")
@@ -422,8 +426,8 @@ local function CJAQ_fake_script() -- _64Speed.LocalScript
 		humanoid.WalkSpeed = 64
 	end)
 end
-coroutine.wrap(CJAQ_fake_script)()
-local function KUKIB_fake_script() -- Universal_3.Change to Uni 
+coroutine.wrap(MJJT_fake_script)()
+local function KJIDP_fake_script() -- Universal_3.Change to Uni 
 	local script = Instance.new('LocalScript', Universal_3)
 
 	local button = script.Parent
@@ -438,8 +442,8 @@ local function KUKIB_fake_script() -- Universal_3.Change to Uni
 		end
 	end)
 end
-coroutine.wrap(KUKIB_fake_script)()
-local function WUUUSWQ_fake_script() -- Home_3.Change to Hom 
+coroutine.wrap(KJIDP_fake_script)()
+local function CTYY_fake_script() -- Home_3.Change to Hom 
 	local script = Instance.new('LocalScript', Home_3)
 
 	local button = script.Parent
@@ -454,9 +458,9 @@ local function WUUUSWQ_fake_script() -- Home_3.Change to Hom
 		end
 	end)
 end
-coroutine.wrap(WUUUSWQ_fake_script)()
+coroutine.wrap(CTYY_fake_script)()
 -- LearnLua.Script is disabled.
-local function GSNLK_fake_script() -- LearnLua.LocalScript 
+local function GEIFLKS_fake_script() -- LearnLua.LocalScript 
 	local script = Instance.new('LocalScript', LearnLua)
 
 	local Players = game:GetService("Players")
@@ -468,8 +472,8 @@ local function GSNLK_fake_script() -- LearnLua.LocalScript
 		humanoid.WalkSpeed = 64
 	end)
 end
-coroutine.wrap(GSNLK_fake_script)()
-local function VPQO_fake_script() -- HideShow.Hide or Show Script 
+coroutine.wrap(GEIFLKS_fake_script)()
+local function KWIPV_fake_script() -- HideShow.Hide or Show Script 
 	local script = Instance.new('LocalScript', HideShow)
 
 	local button = script.Parent
@@ -485,4 +489,4 @@ local function VPQO_fake_script() -- HideShow.Hide or Show Script
 	end)
 	
 end
-coroutine.wrap(VPQO_fake_script)()
+coroutine.wrap(KWIPV_fake_script)()
