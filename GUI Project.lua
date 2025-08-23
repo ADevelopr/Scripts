@@ -22,6 +22,7 @@ local Settingsframe = Instance.new("ScrollingFrame")
 local hideshowbutton = Instance.new("TextLabel")
 local Dragdetector = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local UIDragDetector = Instance.new("UIDragDetector")
 local Notification = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
 local Notificationtext = Instance.new("TextLabel")
@@ -30,7 +31,7 @@ local UICorner_8 = Instance.new("UICorner")
 --Properties:
 
 CleanUI.Name = "CleanUI"
-CleanUI.Parent = game.Players.AngelTheBroy.PlayerGui
+CleanUI.Parent = game.Players.LocalPlayer.PlayerGui
 CleanUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 CleanUI.ResetOnSpawn = false
 
@@ -148,6 +149,9 @@ HideShow.TextSize = 14.000
 HideShow.TextWrapped = true
 
 UICorner_5.Parent = HideShow
+
+UIDragDetector.Parent = HideShow
+UIDragDetector.Enabled = false
 
 Settingsframe.Name = "Settings frame"
 Settingsframe.Parent = CleanUI
