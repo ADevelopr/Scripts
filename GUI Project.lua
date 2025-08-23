@@ -138,7 +138,7 @@ HideShow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 HideShow.BorderColor3 = Color3.fromRGB(0, 0, 0)
 HideShow.BorderSizePixel = 0
 HideShow.Position = UDim2.new(0.690294206, 0, 0.0827903599, 0)
-HideShow.Size = UDim2.new(0, 35, 0, 35)
+HideShow.Size = UDim2.new(0.0274725277, 0, 0.0578193851, 0)
 HideShow.Font = Enum.Font.SourceSans
 HideShow.Text = "C-UI"
 HideShow.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -155,7 +155,7 @@ Settingsframe.AnchorPoint = Vector2.new(0.5, 0.5)
 Settingsframe.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
 Settingsframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Settingsframe.BorderSizePixel = 0
-Settingsframe.Position = UDim2.new(0.5, 0, 0.287272722, 0)
+Settingsframe.Position = UDim2.new(0.5, 0, 0.222845405, 0)
 Settingsframe.Size = UDim2.new(0, 450, 0, 205)
 Settingsframe.Visible = false
 
@@ -195,7 +195,7 @@ UICorner_8.Parent = Notificationtext
 
 -- Scripts:
 
-local function SGPX_fake_script() -- Executortextbox.Execute script 
+local function QGQCPWB_fake_script() -- Executortextbox.Execute script 
 	local script = Instance.new('LocalScript', Executortextbox)
 
 	script.Parent.FocusLost:Connect(function()
@@ -218,8 +218,8 @@ local function SGPX_fake_script() -- Executortextbox.Execute script
 		end
 	end)
 end
-coroutine.wrap(SGPX_fake_script)()
-local function CDLLBZ_fake_script() -- Text.Announcement 
+coroutine.wrap(QGQCPWB_fake_script)()
+local function KYLTKG_fake_script() -- Text.Announcement 
 	local script = Instance.new('LocalScript', Text)
 
 	local player = game.Players.LocalPlayer.Name
@@ -267,8 +267,8 @@ local function CDLLBZ_fake_script() -- Text.Announcement
 	hideText()
 	text.Text = ''
 end
-coroutine.wrap(CDLLBZ_fake_script)()
-local function MXSUEDR_fake_script() -- Openexecutor.Show Executor 
+coroutine.wrap(KYLTKG_fake_script)()
+local function PZIBCAG_fake_script() -- Openexecutor.Show Executor 
 	local script = Instance.new('LocalScript', Openexecutor)
 
 	local button = script.Parent
@@ -285,8 +285,8 @@ local function MXSUEDR_fake_script() -- Openexecutor.Show Executor
 	end)
 	
 end
-coroutine.wrap(MXSUEDR_fake_script)()
-local function AKBCMKN_fake_script() -- Settings.Show Executor 
+coroutine.wrap(PZIBCAG_fake_script)()
+local function WGKFZHW_fake_script() -- Settings.Show Executor 
 	local script = Instance.new('LocalScript', Settings)
 
 	local button = script.Parent
@@ -303,8 +303,8 @@ local function AKBCMKN_fake_script() -- Settings.Show Executor
 	end)
 	
 end
-coroutine.wrap(AKBCMKN_fake_script)()
-local function IXRDP_fake_script() -- HideShow.Visible script 
+coroutine.wrap(WGKFZHW_fake_script)()
+local function OVMX_fake_script() -- HideShow.Visible script 
 	local script = Instance.new('LocalScript', HideShow)
 
 	local button = script.Parent
@@ -321,8 +321,8 @@ local function IXRDP_fake_script() -- HideShow.Visible script
 		end
 	end)
 end
-coroutine.wrap(IXRDP_fake_script)()
-local function NSQJJKK_fake_script() -- Settingsframe.Hide SF 
+coroutine.wrap(OVMX_fake_script)()
+local function LQLYUDZ_fake_script() -- Settingsframe.Hide SF 
 	local script = Instance.new('LocalScript', Settingsframe)
 
 	local button = script.Parent.Parent:WaitForChild('Hide/Show')
@@ -348,8 +348,8 @@ local function NSQJJKK_fake_script() -- Settingsframe.Hide SF
 		end
 	end)
 end
-coroutine.wrap(NSQJJKK_fake_script)()
-local function UWHRVKB_fake_script() -- Notificationtext.Notification text handler 
+coroutine.wrap(LQLYUDZ_fake_script)()
+local function HVFJA_fake_script() -- Notificationtext.Notification text handler 
 	local script = Instance.new('LocalScript', Notificationtext)
 
 	local notification = script.Parent.Parent
@@ -394,4 +394,4 @@ local function UWHRVKB_fake_script() -- Notificationtext.Notification text handl
 		print("Ur fine")
 	end
 end
-coroutine.wrap(UWHRVKB_fake_script)()
+coroutine.wrap(HVFJA_fake_script)()
