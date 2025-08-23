@@ -439,6 +439,7 @@ local function YTYKAO_fake_script() -- Notificationtext.Notification text handle
 		notification.visible = true
 		showText()
 		text.Text = 'GUI might <font color='rgb(255,0,0)'>NOT</font> work on mobile. We <font color='rgb(0,255,0)'>recommend</font> using a PC/Laptop.'
+		task.wait(5)
 		hideText()
 	elseif not UserInputService.TouchEnabled and UserInputService.KeyboardEnabled and UserInputService.MouseEnabled then
 		print("Ur fine")
