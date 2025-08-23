@@ -1,6 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
 -- Instances:
 
 local CleanUI = Instance.new("ScreenGui")
@@ -9,14 +6,14 @@ local Executortextbox = Instance.new("TextBox")
 local UICorner = Instance.new("UICorner")
 local UICorner_2 = Instance.new("UICorner")
 local Text = Instance.new("TextLabel")
-local Executor = Instance.new("TextButton")
+local Openexecutor = Instance.new("TextButton")
 local UIGradient = Instance.new("UIGradient")
 local UICorner_3 = Instance.new("UICorner")
 
 --Properties:
 
 CleanUI.Name = "CleanUI"
-CleanUI.Parent = game.Players.AngelTheBroy.PlayerGui
+CleanUI.Parent = game.Players.LocalPlayer.PlayerGui
 CleanUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MYgui.Name = "MYgui"
@@ -25,15 +22,16 @@ MYgui.AnchorPoint = Vector2.new(0.5, 0.5)
 MYgui.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
 MYgui.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MYgui.BorderSizePixel = 0
-MYgui.Position = UDim2.new(0.5, 0, 0.0740034506, 0)
+MYgui.Position = UDim2.new(0.5, 0, 0.0843127221, 0)
 MYgui.Size = UDim2.new(0, 450, 0, 42)
 
 Executortextbox.Name = "Executor textbox"
 Executortextbox.Parent = MYgui
+Executortextbox.AnchorPoint = Vector2.new(0.5, 0.5)
 Executortextbox.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
 Executortextbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Executortextbox.BorderSizePixel = 0
-Executortextbox.Position = UDim2.new(-0.000596381316, 0, 0.99970293, 0)
+Executortextbox.Position = UDim2.new(0.499403626, 0, 3.45208383, 0)
 Executortextbox.Size = UDim2.new(0, 450, 0, 206)
 Executortextbox.Visible = false
 Executortextbox.Font = Enum.Font.SourceSans
@@ -51,10 +49,12 @@ UICorner_2.Parent = MYgui
 
 Text.Name = "Text"
 Text.Parent = MYgui
+Text.AnchorPoint = Vector2.new(0.5, 0.5)
 Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Text.BackgroundTransparency = 1.000
 Text.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Text.BorderSizePixel = 0
+Text.Position = UDim2.new(0.49777779, 0, 0.5, 0)
 Text.Size = UDim2.new(0, 450, 0, 42)
 Text.Font = Enum.Font.SourceSans
 Text.Text = ""
@@ -64,29 +64,29 @@ Text.TextSize = 14.000
 Text.TextTransparency = 1.000
 Text.TextWrapped = true
 
-Executor.Name = "Executor"
-Executor.Parent = CleanUI
-Executor.AnchorPoint = Vector2.new(0.5, 0.5)
-Executor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Executor.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Executor.BorderSizePixel = 0
-Executor.Position = UDim2.new(0.30760625, 0, 0.0181719847, 0)
-Executor.Size = UDim2.new(0, 107, 0, 23)
-Executor.Font = Enum.Font.SourceSans
-Executor.Text = "Executor"
-Executor.TextColor3 = Color3.fromRGB(0, 0, 0)
-Executor.TextScaled = true
-Executor.TextSize = 14.000
-Executor.TextWrapped = true
+Openexecutor.Name = "Open executor"
+Openexecutor.Parent = MYgui
+Openexecutor.AnchorPoint = Vector2.new(0.5, 0.5)
+Openexecutor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Openexecutor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Openexecutor.BorderSizePixel = 0
+Openexecutor.Position = UDim2.new(0.109872229, 0, -0.376779556, 0)
+Openexecutor.Size = UDim2.new(0, 100, 0, 25)
+Openexecutor.Font = Enum.Font.SourceSans
+Openexecutor.Text = "Executor"
+Openexecutor.TextColor3 = Color3.fromRGB(0, 0, 0)
+Openexecutor.TextScaled = true
+Openexecutor.TextSize = 14.000
+Openexecutor.TextWrapped = true
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(36, 255, 2)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(28, 207, 1)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(58, 191, 1))}
-UIGradient.Parent = Executor
+UIGradient.Parent = Openexecutor
 
-UICorner_3.Parent = Executor
+UICorner_3.Parent = Openexecutor
 
 -- Scripts:
 
-local function ULVVIZ_fake_script() -- Executortextbox.Execute script 
+local function MHBWY_fake_script() -- Executortextbox.Execute script 
 	local script = Instance.new('LocalScript', Executortextbox)
 
 	script.Parent.FocusLost:Connect(function()
@@ -109,8 +109,8 @@ local function ULVVIZ_fake_script() -- Executortextbox.Execute script
 		end
 	end)
 end
-coroutine.wrap(ULVVIZ_fake_script)()
-local function QJXPFBE_fake_script() -- Text.Player 
+coroutine.wrap(MHBWY_fake_script)()
+local function VDWS_fake_script() -- Text.Player 
 	local script = Instance.new('LocalScript', Text)
 
 	local text = script.Parent
@@ -141,21 +141,28 @@ local function QJXPFBE_fake_script() -- Text.Player
 		text.TextTransparency = 1
 	end
 	
-	
-	task.wait(5)
-	
+	--Greet player
+	task.wait(2.5)
 	text.Text = 'Hello,  ' .. game.Players.LocalPlayer.Name .. '!'
 	showText()
 	task.wait(5)
 	hideText()
 	text.Text = ''
+	
+	--Name ui
+	task.wait(2.5)
+	text.Text = 'Welcome to CleanGui!' 
+	showText()
+	task.wait(5)
+	hideText()
+	text.Text = ''
 end
-coroutine.wrap(QJXPFBE_fake_script)()
-local function NAHBEGP_fake_script() -- Executor.Show textbox 
-	local script = Instance.new('LocalScript', Executor)
+coroutine.wrap(VDWS_fake_script)()
+local function QMXFT_fake_script() -- Openexecutor.Show Executor 
+	local script = Instance.new('LocalScript', Openexecutor)
 
 	local button = script.Parent
-	local frame = button.Parent.MYgui:WaitForChild("Executor textbox") -- The Frame in the same ScreenGui
+	local frame = button.Parent:WaitForChild("Executor textbox") -- The Frame in the same ScreenGui
 	local isOpen = false -- Frame starts visible
 	
 	button.MouseButton1Click:Connect(function()
@@ -168,4 +175,4 @@ local function NAHBEGP_fake_script() -- Executor.Show textbox
 	end)
 	
 end
-coroutine.wrap(NAHBEGP_fake_script)()
+coroutine.wrap(QMXFT_fake_script)()
