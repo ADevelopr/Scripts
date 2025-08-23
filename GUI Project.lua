@@ -19,8 +19,6 @@ local UICorner_4 = Instance.new("UICorner")
 local HideShow = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local Settingsframe = Instance.new("ScrollingFrame")
-local hideshowbutton = Instance.new("TextLabel")
-local Dragdetector = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local Notification = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
@@ -32,6 +30,7 @@ local UICorner_8 = Instance.new("UICorner")
 CleanUI.Name = "CleanUI"
 CleanUI.Parent = game.Players.LocalPlayer.PlayerGui
 CleanUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+CleanUI.IgnoreGuiInset = true
 CleanUI.ResetOnSpawn = false
 
 MYgui.Name = "MYgui"
@@ -154,42 +153,14 @@ Settingsframe.Parent = CleanUI
 Settingsframe.Active = true
 Settingsframe.AnchorPoint = Vector2.new(0.5, 0.5)
 Settingsframe.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Settingsframe.BackgroundTransparency = 1.000
 Settingsframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Settingsframe.BorderSizePixel = 0
-Settingsframe.Position = UDim2.new(0.500418067, 0, 0.287444949, 0)
+Settingsframe.Position = UDim2.new(0.5, 0, 0.295532644, 0)
 Settingsframe.Size = UDim2.new(0, 450, 0, 205)
 Settingsframe.Visible = false
 
-hideshowbutton.Name = "hide/show button"
-hideshowbutton.Parent = Settingsframe
-hideshowbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-hideshowbutton.BackgroundTransparency = 0.750
-hideshowbutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-hideshowbutton.BorderSizePixel = 0
-hideshowbutton.Size = UDim2.new(0, 450, 0, 25)
-hideshowbutton.Font = Enum.Font.SourceSans
-hideshowbutton.Text = "Hide/Show button settings"
-hideshowbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
-hideshowbutton.TextScaled = true
-hideshowbutton.TextSize = 14.000
-hideshowbutton.TextWrapped = true
-
-Dragdetector.Name = "Dragdetector"
-Dragdetector.Parent = Settingsframe
-Dragdetector.AnchorPoint = Vector2.new(0.5, 0.5)
-Dragdetector.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Dragdetector.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Dragdetector.BorderSizePixel = 0
-Dragdetector.Position = UDim2.new(0, 50, 0, 37)
-Dragdetector.Size = UDim2.new(0, 100, 0, 25)
-Dragdetector.Font = Enum.Font.SourceSans
-Dragdetector.Text = "Enable Dragging"
-Dragdetector.TextColor3 = Color3.fromRGB(0, 0, 0)
-Dragdetector.TextScaled = true
-Dragdetector.TextSize = 14.000
-Dragdetector.TextWrapped = true
-
-UICorner_6.Parent = Dragdetector
+UICorner_6.Parent = Settingsframe
 
 Notification.Name = "Notification"
 Notification.Parent = CleanUI
@@ -224,7 +195,7 @@ UICorner_8.Parent = Notificationtext
 
 -- Scripts:
 
-local function XSFJKG_fake_script() -- Executortextbox.Execute script 
+local function QZGIRXH_fake_script() -- Executortextbox.Execute script 
 	local script = Instance.new('LocalScript', Executortextbox)
 
 	script.Parent.FocusLost:Connect(function()
@@ -247,8 +218,8 @@ local function XSFJKG_fake_script() -- Executortextbox.Execute script
 		end
 	end)
 end
-coroutine.wrap(XSFJKG_fake_script)()
-local function ELHA_fake_script() -- Text.Announcement 
+coroutine.wrap(QZGIRXH_fake_script)()
+local function MEWP_fake_script() -- Text.Announcement 
 	local script = Instance.new('LocalScript', Text)
 
 	local player = game.Players.LocalPlayer.Name
@@ -279,7 +250,7 @@ local function ELHA_fake_script() -- Text.Announcement
 		task.wait(0.1)
 		text.TextTransparency = 1
 	end
-	
+
 	--Greet player
 	task.wait(2.5)
 	text.Text = 'Hello,  ' .. player .. '!'
@@ -287,7 +258,7 @@ local function ELHA_fake_script() -- Text.Announcement
 	task.wait(2.5)
 	hideText()
 	text.Text = ''
-	
+
 	--Name ui
 	task.wait(2.5)
 	text.Text = 'Welcome to CleanGui!' 
@@ -296,14 +267,14 @@ local function ELHA_fake_script() -- Text.Announcement
 	hideText()
 	text.Text = ''
 end
-coroutine.wrap(ELHA_fake_script)()
-local function ONQBPRV_fake_script() -- Openexecutor.Show Executor 
+coroutine.wrap(MEWP_fake_script)()
+local function UVXEFJ_fake_script() -- Openexecutor.Show Executor 
 	local script = Instance.new('LocalScript', Openexecutor)
 
 	local button = script.Parent
 	local frame = button.Parent.Parent:WaitForChild("Executor textbox") -- The Frame in the same ScreenGui
 	local isOpen = false -- Frame starts visible
-	
+
 	button.MouseButton1Click:Connect(function()
 		if isOpen then
 			frame.Visible = true
@@ -312,16 +283,16 @@ local function ONQBPRV_fake_script() -- Openexecutor.Show Executor
 		end
 		isOpen = not isOpen
 	end)
-	
+
 end
-coroutine.wrap(ONQBPRV_fake_script)()
-local function ONZPP_fake_script() -- Settings.Show Executor 
+coroutine.wrap(UVXEFJ_fake_script)()
+local function SZQGBX_fake_script() -- Settings.Show Executor 
 	local script = Instance.new('LocalScript', Settings)
 
 	local button = script.Parent
 	local frame = button.Parent.Parent.Parent:WaitForChild("Settings frame") -- The Frame in the same ScreenGui
 	local isOpen = false -- Frame starts visible
-	
+
 	button.MouseButton1Click:Connect(function()
 		if isOpen then
 			frame.Visible = true
@@ -330,17 +301,16 @@ local function ONZPP_fake_script() -- Settings.Show Executor
 		end
 		isOpen = not isOpen
 	end)
-	
+
 end
-coroutine.wrap(ONZPP_fake_script)()
-local function OPRCT_fake_script() -- HideShow.Visible script 
+coroutine.wrap(SZQGBX_fake_script)()
+local function IPTV_fake_script() -- HideShow.Visible script 
 	local script = Instance.new('LocalScript', HideShow)
 
 	local button = script.Parent
 	local GUI = button.Parent:WaitForChild('MYgui')
-	local scrolling = button.Parent:WaitForChild('Settings frame')
 	local visible_GUI = true
-	
+
 	button.MouseButton1Click:Connect(function()
 		if visible_GUI == true then
 			GUI.Visible = false
@@ -349,19 +319,17 @@ local function OPRCT_fake_script() -- HideShow.Visible script
 			GUI.Visible = true
 			visible_GUI = true
 		end
-		
-		
 	end)
 end
-coroutine.wrap(OPRCT_fake_script)()
-local function CPCFN_fake_script() -- Settingsframe.Hide SF 
+coroutine.wrap(IPTV_fake_script)()
+local function RLQEPM_fake_script() -- Settingsframe.Hide SF 
 	local script = Instance.new('LocalScript', Settingsframe)
 
 	local button = script.Parent.Parent:WaitForChild('Hide/Show')
 	local sf = script.Parent
 	local sfbutton = sf.Parent.MYgui["Topbar buttons"].Settings
 	local visible = false
-	
+
 	sfbutton.MouseButton1Click:Connect(function()
 		if visible == false then
 			visible = true
@@ -369,7 +337,7 @@ local function CPCFN_fake_script() -- Settingsframe.Hide SF
 			visible = false
 		end
 	end)
-	
+
 	button.MouseButton1Click:Connect(function()
 		if visible == true then
 			sf.Visible = false
@@ -380,28 +348,8 @@ local function CPCFN_fake_script() -- Settingsframe.Hide SF
 		end
 	end)
 end
-coroutine.wrap(CPCFN_fake_script)()
-local function AKQYBB_fake_script() -- Dragdetector.Enable/Disable 
-	local script = Instance.new('LocalScript', Dragdetector)
-
-	button = script.Parent
-	UiDrag = game.Players.LocalPlayer.PlayerGui.CleanUI["Hide/Show"].UIDragDetector
-	Enabled = false
-	
-	button.MouseButton1Click:Connect(function()
-		if Enabled == false then
-			UiDrag.Enabled = true
-			Enabled = true
-			button.Text = 'Disable Dragging'
-		else
-			UiDrag.Enabled = false
-			Enabled = false
-			button.Text = 'Enable Dragging'
-		end
-	end)
-end
-coroutine.wrap(AKQYBB_fake_script)()
-local function VSFTYLV_fake_script() -- Notificationtext.Notification text handler 
+coroutine.wrap(RLQEPM_fake_script)()
+local function BKIVRX_fake_script() -- Notificationtext.Notification text handler 
 	local script = Instance.new('LocalScript', Notificationtext)
 
 	local notification = script.Parent.Parent
@@ -432,9 +380,9 @@ local function VSFTYLV_fake_script() -- Notificationtext.Notification text handl
 		task.wait(0.1)
 		text.TextTransparency = 1
 	end
-	
+
 	local UserInputService = game:GetService("UserInputService")
-	
+
 	if UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled and not UserInputService.MouseEnabled then
 		notification.Visible = true
 		showText()
@@ -445,4 +393,4 @@ local function VSFTYLV_fake_script() -- Notificationtext.Notification text handl
 		print("Ur fine")
 	end
 end
-coroutine.wrap(VSFTYLV_fake_script)()
+coroutine.wrap(BKIVRX_fake_script)()
