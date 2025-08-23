@@ -15,7 +15,7 @@ local UICorner_3 = Instance.new("UICorner")
 CleanUI.Name = "CleanUI"
 CleanUI.Parent = game.Players.LocalPlayer.PlayerGui
 CleanUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-CleanUI.IgnoreGuiInset = true
+CleanUI.IgnoreGuilnset = true
 
 MYgui.Name = "MYgui"
 MYgui.Parent = CleanUI
