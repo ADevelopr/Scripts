@@ -30,7 +30,6 @@ local UICorner_8 = Instance.new("UICorner")
 CleanUI.Name = "CleanUI"
 CleanUI.Parent = game.Players.LocalPlayer.PlayerGui
 CleanUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-CleanUI.IgnoreGuiInset = true
 CleanUI.ResetOnSpawn = false
 
 MYgui.Name = "MYgui"
@@ -48,8 +47,8 @@ Executortextbox.AnchorPoint = Vector2.new(0.5, 0.5)
 Executortextbox.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
 Executortextbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Executortextbox.BorderSizePixel = 0
-Executortextbox.Position = UDim2.new(0.499403626, 0, 3.45208383, 0)
-Executortextbox.Size = UDim2.new(0, 450, 0, 206)
+Executortextbox.Position = UDim2.new(0.499701798, 0, 3.43268991, 0)
+Executortextbox.Size = UDim2.new(0, 449, 0, 204)
 Executortextbox.Visible = false
 Executortextbox.Font = Enum.Font.SourceSans
 Executortextbox.MultiLine = true
@@ -137,8 +136,8 @@ HideShow.AnchorPoint = Vector2.new(0.5, 0.5)
 HideShow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 HideShow.BorderColor3 = Color3.fromRGB(0, 0, 0)
 HideShow.BorderSizePixel = 0
-HideShow.Position = UDim2.new(0.499893248, 0, 0.0226529054, 0)
-HideShow.Size = UDim2.new(0, 25, 0, 25)
+HideShow.Position = UDim2.new(0.785270631, 0, 0.0827903599, 0)
+HideShow.Size = UDim2.new(0, 35, 0, 35)
 HideShow.Font = Enum.Font.SourceSans
 HideShow.Text = "C-UI"
 HideShow.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -153,10 +152,9 @@ Settingsframe.Parent = CleanUI
 Settingsframe.Active = true
 Settingsframe.AnchorPoint = Vector2.new(0.5, 0.5)
 Settingsframe.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
-Settingsframe.BackgroundTransparency = 1.000
 Settingsframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Settingsframe.BorderSizePixel = 0
-Settingsframe.Position = UDim2.new(0.5, 0, 0.295532644, 0)
+Settingsframe.Position = UDim2.new(0.5, 0, 0.287272722, 0)
 Settingsframe.Size = UDim2.new(0, 450, 0, 205)
 Settingsframe.Visible = false
 
@@ -190,13 +188,12 @@ Notificationtext.TextColor3 = Color3.fromRGB(147, 189, 174)
 Notificationtext.TextScaled = true
 Notificationtext.TextSize = 14.000
 Notificationtext.TextWrapped = true
-Notificationtext.RichText = true
 
 UICorner_8.Parent = Notificationtext
 
 -- Scripts:
 
-local function QZGIRXH_fake_script() -- Executortextbox.Execute script 
+local function PWVLGR_fake_script() -- Executortextbox.Execute script 
 	local script = Instance.new('LocalScript', Executortextbox)
 
 	script.Parent.FocusLost:Connect(function()
@@ -219,8 +216,8 @@ local function QZGIRXH_fake_script() -- Executortextbox.Execute script
 		end
 	end)
 end
-coroutine.wrap(QZGIRXH_fake_script)()
-local function MEWP_fake_script() -- Text.Announcement 
+coroutine.wrap(PWVLGR_fake_script)()
+local function LELPIRM_fake_script() -- Text.Announcement 
 	local script = Instance.new('LocalScript', Text)
 
 	local player = game.Players.LocalPlayer.Name
@@ -251,7 +248,7 @@ local function MEWP_fake_script() -- Text.Announcement
 		task.wait(0.1)
 		text.TextTransparency = 1
 	end
-
+	
 	--Greet player
 	task.wait(2.5)
 	text.Text = 'Hello,  ' .. player .. '!'
@@ -259,7 +256,7 @@ local function MEWP_fake_script() -- Text.Announcement
 	task.wait(2.5)
 	hideText()
 	text.Text = ''
-
+	
 	--Name ui
 	task.wait(2.5)
 	text.Text = 'Welcome to CleanGui!' 
@@ -268,14 +265,14 @@ local function MEWP_fake_script() -- Text.Announcement
 	hideText()
 	text.Text = ''
 end
-coroutine.wrap(MEWP_fake_script)()
-local function UVXEFJ_fake_script() -- Openexecutor.Show Executor 
+coroutine.wrap(LELPIRM_fake_script)()
+local function JGLLYT_fake_script() -- Openexecutor.Show Executor 
 	local script = Instance.new('LocalScript', Openexecutor)
 
 	local button = script.Parent
 	local frame = button.Parent.Parent:WaitForChild("Executor textbox") -- The Frame in the same ScreenGui
 	local isOpen = false -- Frame starts visible
-
+	
 	button.MouseButton1Click:Connect(function()
 		if isOpen then
 			frame.Visible = true
@@ -284,16 +281,16 @@ local function UVXEFJ_fake_script() -- Openexecutor.Show Executor
 		end
 		isOpen = not isOpen
 	end)
-
+	
 end
-coroutine.wrap(UVXEFJ_fake_script)()
-local function SZQGBX_fake_script() -- Settings.Show Executor 
+coroutine.wrap(JGLLYT_fake_script)()
+local function UYUZF_fake_script() -- Settings.Show Executor 
 	local script = Instance.new('LocalScript', Settings)
 
 	local button = script.Parent
 	local frame = button.Parent.Parent.Parent:WaitForChild("Settings frame") -- The Frame in the same ScreenGui
 	local isOpen = false -- Frame starts visible
-
+	
 	button.MouseButton1Click:Connect(function()
 		if isOpen then
 			frame.Visible = true
@@ -302,16 +299,16 @@ local function SZQGBX_fake_script() -- Settings.Show Executor
 		end
 		isOpen = not isOpen
 	end)
-
+	
 end
-coroutine.wrap(SZQGBX_fake_script)()
-local function IPTV_fake_script() -- HideShow.Visible script 
+coroutine.wrap(UYUZF_fake_script)()
+local function FUNPMCY_fake_script() -- HideShow.Visible script 
 	local script = Instance.new('LocalScript', HideShow)
 
 	local button = script.Parent
 	local GUI = button.Parent:WaitForChild('MYgui')
 	local visible_GUI = true
-
+	
 	button.MouseButton1Click:Connect(function()
 		if visible_GUI == true then
 			GUI.Visible = false
@@ -322,15 +319,15 @@ local function IPTV_fake_script() -- HideShow.Visible script
 		end
 	end)
 end
-coroutine.wrap(IPTV_fake_script)()
-local function RLQEPM_fake_script() -- Settingsframe.Hide SF 
+coroutine.wrap(FUNPMCY_fake_script)()
+local function NFUHCCA_fake_script() -- Settingsframe.Hide SF 
 	local script = Instance.new('LocalScript', Settingsframe)
 
 	local button = script.Parent.Parent:WaitForChild('Hide/Show')
 	local sf = script.Parent
 	local sfbutton = sf.Parent.MYgui["Topbar buttons"].Settings
 	local visible = false
-
+	
 	sfbutton.MouseButton1Click:Connect(function()
 		if visible == false then
 			visible = true
@@ -338,7 +335,7 @@ local function RLQEPM_fake_script() -- Settingsframe.Hide SF
 			visible = false
 		end
 	end)
-
+	
 	button.MouseButton1Click:Connect(function()
 		if visible == true then
 			sf.Visible = false
@@ -349,8 +346,8 @@ local function RLQEPM_fake_script() -- Settingsframe.Hide SF
 		end
 	end)
 end
-coroutine.wrap(RLQEPM_fake_script)()
-local function BKIVRX_fake_script() -- Notificationtext.Notification text handler 
+coroutine.wrap(NFUHCCA_fake_script)()
+local function PZEJF_fake_script() -- Notificationtext.Notification text handler 
 	local script = Instance.new('LocalScript', Notificationtext)
 
 	local notification = script.Parent.Parent
@@ -381,9 +378,9 @@ local function BKIVRX_fake_script() -- Notificationtext.Notification text handle
 		task.wait(0.1)
 		text.TextTransparency = 1
 	end
-
+	
 	local UserInputService = game:GetService("UserInputService")
-
+	
 	if UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled and not UserInputService.MouseEnabled then
 		notification.Visible = true
 		showText()
@@ -395,4 +392,4 @@ local function BKIVRX_fake_script() -- Notificationtext.Notification text handle
 		print("Ur fine")
 	end
 end
-coroutine.wrap(BKIVRX_fake_script)()
+coroutine.wrap(PZEJF_fake_script)()
