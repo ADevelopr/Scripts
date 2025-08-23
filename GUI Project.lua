@@ -190,6 +190,7 @@ Notificationtext.TextColor3 = Color3.fromRGB(147, 189, 174)
 Notificationtext.TextScaled = true
 Notificationtext.TextSize = 14.000
 Notificationtext.TextWrapped = true
+Notificationtext.RichText = true
 
 UICorner_8.Parent = Notificationtext
 
@@ -389,6 +390,7 @@ local function BKIVRX_fake_script() -- Notificationtext.Notification text handle
 		text.Text = "GUI might <font color='rgb(255,0,0)'>NOT</font> work on mobile. We <font color='rgb(0,255,0)'>recommend</font> using a PC/Laptop."
 		task.wait(10)
 		hideText()
+		notification.Visible = false
 	elseif not UserInputService.TouchEnabled and UserInputService.KeyboardEnabled and UserInputService.MouseEnabled then
 		print("Ur fine")
 	end
