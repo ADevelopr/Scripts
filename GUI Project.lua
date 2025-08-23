@@ -25,7 +25,7 @@ MYgui.AnchorPoint = Vector2.new(0.5, 0.5)
 MYgui.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
 MYgui.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MYgui.BorderSizePixel = 0
-MYgui.Position = UDim2.new(0.5, 0, 0.0722852498, 0)
+MYgui.Position = UDim2.new(0.5, 0, 0.0740034506, 0)
 MYgui.Size = UDim2.new(0, 450, 0, 42)
 
 Executortextbox.Name = "Executor textbox"
@@ -57,19 +57,19 @@ Text.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Text.BorderSizePixel = 0
 Text.Size = UDim2.new(0, 450, 0, 42)
 Text.Font = Enum.Font.SourceSans
-Text.Text = ""
+Text.Text = "Hello,  AngelTheBroy!"
 Text.TextColor3 = Color3.fromRGB(199, 199, 199)
 Text.TextScaled = true
 Text.TextSize = 14.000
-Text.TextTransparency = 1.000
 Text.TextWrapped = true
 
 Executor.Name = "Executor"
 Executor.Parent = CleanUI
+Executor.AnchorPoint = Vector2.new(0.5, 0.5)
 Executor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Executor.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Executor.BorderSizePixel = 0
-Executor.Position = UDim2.new(0.248322144, 0, -0.000728350948, 0)
+Executor.Position = UDim2.new(0.30760625, 0, 0.0181719847, 0)
 Executor.Size = UDim2.new(0, 107, 0, 23)
 Executor.Font = Enum.Font.SourceSans
 Executor.Text = "Executor"
@@ -85,7 +85,7 @@ UICorner_3.Parent = Executor
 
 -- Scripts:
 
-local function NWAX_fake_script() -- Executortextbox.Execute script 
+local function DUQIASN_fake_script() -- Executortextbox.Execute script 
 	local script = Instance.new('LocalScript', Executortextbox)
 
 	script.Parent.FocusLost:Connect(function()
@@ -108,8 +108,8 @@ local function NWAX_fake_script() -- Executortextbox.Execute script
 		end
 	end)
 end
-coroutine.wrap(NWAX_fake_script)()
-local function UUCHJO_fake_script() -- Text.Player 
+coroutine.wrap(DUQIASN_fake_script)()
+local function ATGPN_fake_script() -- Text.Player 
 	local script = Instance.new('LocalScript', Text)
 
 	local text = script.Parent
@@ -149,8 +149,8 @@ local function UUCHJO_fake_script() -- Text.Player
 	hideText()
 	text.Text = ''
 end
-coroutine.wrap(UUCHJO_fake_script)()
-local function OHJRX_fake_script() -- Executor.Show textbox 
+coroutine.wrap(ATGPN_fake_script)()
+local function QFWFQ_fake_script() -- Executor.Show textbox 
 	local script = Instance.new('LocalScript', Executor)
 
 	local button = script.Parent
@@ -167,4 +167,4 @@ local function OHJRX_fake_script() -- Executor.Show textbox
 	end)
 	
 end
-coroutine.wrap(OHJRX_fake_script)()
+coroutine.wrap(QFWFQ_fake_script)()
