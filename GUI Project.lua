@@ -22,7 +22,6 @@ local Settingsframe = Instance.new("ScrollingFrame")
 local hideshowbutton = Instance.new("TextLabel")
 local Dragdetector = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local UIDragDetector = Instance.new("UIDragDetector")
 local Notification = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
 local Notificationtext = Instance.new("TextLabel")
@@ -150,9 +149,6 @@ HideShow.TextWrapped = true
 
 UICorner_5.Parent = HideShow
 
-UIDragDetector.Parent = HideShow
-UIDragDetector.Enabled = false
-
 Settingsframe.Name = "Settings frame"
 Settingsframe.Parent = CleanUI
 Settingsframe.Active = true
@@ -228,7 +224,7 @@ UICorner_8.Parent = Notificationtext
 
 -- Scripts:
 
-local function DESAKS_fake_script() -- Executortextbox.Execute script 
+local function XSFJKG_fake_script() -- Executortextbox.Execute script 
 	local script = Instance.new('LocalScript', Executortextbox)
 
 	script.Parent.FocusLost:Connect(function()
@@ -251,8 +247,8 @@ local function DESAKS_fake_script() -- Executortextbox.Execute script
 		end
 	end)
 end
-coroutine.wrap(DESAKS_fake_script)()
-local function JGQVUC_fake_script() -- Text.Announcement 
+coroutine.wrap(XSFJKG_fake_script)()
+local function ELHA_fake_script() -- Text.Announcement 
 	local script = Instance.new('LocalScript', Text)
 
 	local player = game.Players.LocalPlayer.Name
@@ -300,8 +296,8 @@ local function JGQVUC_fake_script() -- Text.Announcement
 	hideText()
 	text.Text = ''
 end
-coroutine.wrap(JGQVUC_fake_script)()
-local function TYZD_fake_script() -- Openexecutor.Show Executor 
+coroutine.wrap(ELHA_fake_script)()
+local function ONQBPRV_fake_script() -- Openexecutor.Show Executor 
 	local script = Instance.new('LocalScript', Openexecutor)
 
 	local button = script.Parent
@@ -318,8 +314,8 @@ local function TYZD_fake_script() -- Openexecutor.Show Executor
 	end)
 	
 end
-coroutine.wrap(TYZD_fake_script)()
-local function EOTXS_fake_script() -- Settings.Show Executor 
+coroutine.wrap(ONQBPRV_fake_script)()
+local function ONZPP_fake_script() -- Settings.Show Executor 
 	local script = Instance.new('LocalScript', Settings)
 
 	local button = script.Parent
@@ -336,8 +332,8 @@ local function EOTXS_fake_script() -- Settings.Show Executor
 	end)
 	
 end
-coroutine.wrap(EOTXS_fake_script)()
-local function EQIN_fake_script() -- HideShow.Visible script 
+coroutine.wrap(ONZPP_fake_script)()
+local function OPRCT_fake_script() -- HideShow.Visible script 
 	local script = Instance.new('LocalScript', HideShow)
 
 	local button = script.Parent
@@ -357,28 +353,8 @@ local function EQIN_fake_script() -- HideShow.Visible script
 		
 	end)
 end
-coroutine.wrap(EQIN_fake_script)()
-local function FJKYXU_fake_script() -- Dragdetector.Enable/Disable 
-	local script = Instance.new('LocalScript', Dragdetector)
-
-	button = script.Parent
-	UiDrag = game.Players.LocalPlayer.PlayerGui.CleanUI["Hide/Show"].UIDragDetector
-	Enabled = false
-	
-	button.MouseButton1Click:Connect(function()
-		if Enabled == false then
-			UiDrag.Enabled = true
-			Enabled = true
-			button.Text = 'Disable Dragging'
-		else
-			UiDrag.Enabled = false
-			Enabled = false
-			button.Text = 'Enable Dragging'
-		end
-	end)
-end
-coroutine.wrap(FJKYXU_fake_script)()
-local function UKGKI_fake_script() -- Settingsframe.Hide SF 
+coroutine.wrap(OPRCT_fake_script)()
+local function CPCFN_fake_script() -- Settingsframe.Hide SF 
 	local script = Instance.new('LocalScript', Settingsframe)
 
 	local button = script.Parent.Parent:WaitForChild('Hide/Show')
@@ -404,8 +380,28 @@ local function UKGKI_fake_script() -- Settingsframe.Hide SF
 		end
 	end)
 end
-coroutine.wrap(UKGKI_fake_script)()
-local function YTYKAO_fake_script() -- Notificationtext.Notification text handler 
+coroutine.wrap(CPCFN_fake_script)()
+local function AKQYBB_fake_script() -- Dragdetector.Enable/Disable 
+	local script = Instance.new('LocalScript', Dragdetector)
+
+	button = script.Parent
+	UiDrag = game.Players.LocalPlayer.PlayerGui.CleanUI["Hide/Show"].UIDragDetector
+	Enabled = false
+	
+	button.MouseButton1Click:Connect(function()
+		if Enabled == false then
+			UiDrag.Enabled = true
+			Enabled = true
+			button.Text = 'Disable Dragging'
+		else
+			UiDrag.Enabled = false
+			Enabled = false
+			button.Text = 'Enable Dragging'
+		end
+	end)
+end
+coroutine.wrap(AKQYBB_fake_script)()
+local function VSFTYLV_fake_script() -- Notificationtext.Notification text handler 
 	local script = Instance.new('LocalScript', Notificationtext)
 
 	local notification = script.Parent.Parent
@@ -440,13 +436,13 @@ local function YTYKAO_fake_script() -- Notificationtext.Notification text handle
 	local UserInputService = game:GetService("UserInputService")
 	
 	if UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled and not UserInputService.MouseEnabled then
-		notification.visible = true
+		notification.Visible = true
 		showText()
-		text.Text = 'GUI might <font color='rgb(255,0,0)'>NOT</font> work on mobile. We <font color='rgb(0,255,0)'>recommend</font> using a PC/Laptop.'
-		task.wait(5)
+		text.Text = "GUI might <font color='rgb(255,0,0)'>NOT</font> work on mobile. We <font color='rgb(0,255,0)'>recommend</font> using a PC/Laptop."
+		task.wait(10)
 		hideText()
 	elseif not UserInputService.TouchEnabled and UserInputService.KeyboardEnabled and UserInputService.MouseEnabled then
 		print("Ur fine")
 	end
 end
-coroutine.wrap(YTYKAO_fake_script)()
+coroutine.wrap(VSFTYLV_fake_script)()
