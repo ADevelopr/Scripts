@@ -16,7 +16,7 @@ local UICorner_3 = Instance.new("UICorner")
 --Properties:
 
 CleanUI.Name = "CleanUI"
-CleanUI.Parent = game.Players.LocalPlayer.PlayerGui
+CleanUI.Parent = game.Players.AngelTheBroy.PlayerGui
 CleanUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MYgui.Name = "MYgui"
@@ -57,10 +57,11 @@ Text.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Text.BorderSizePixel = 0
 Text.Size = UDim2.new(0, 450, 0, 42)
 Text.Font = Enum.Font.SourceSans
-Text.Text = "Hello,  AngelTheBroy!"
+Text.Text = ""
 Text.TextColor3 = Color3.fromRGB(199, 199, 199)
 Text.TextScaled = true
 Text.TextSize = 14.000
+Text.TextTransparency = 1.000
 Text.TextWrapped = true
 
 Executor.Name = "Executor"
@@ -85,7 +86,7 @@ UICorner_3.Parent = Executor
 
 -- Scripts:
 
-local function DUQIASN_fake_script() -- Executortextbox.Execute script 
+local function ULVVIZ_fake_script() -- Executortextbox.Execute script 
 	local script = Instance.new('LocalScript', Executortextbox)
 
 	script.Parent.FocusLost:Connect(function()
@@ -108,8 +109,8 @@ local function DUQIASN_fake_script() -- Executortextbox.Execute script
 		end
 	end)
 end
-coroutine.wrap(DUQIASN_fake_script)()
-local function ATGPN_fake_script() -- Text.Player 
+coroutine.wrap(ULVVIZ_fake_script)()
+local function QJXPFBE_fake_script() -- Text.Player 
 	local script = Instance.new('LocalScript', Text)
 
 	local text = script.Parent
@@ -149,8 +150,8 @@ local function ATGPN_fake_script() -- Text.Player
 	hideText()
 	text.Text = ''
 end
-coroutine.wrap(ATGPN_fake_script)()
-local function QFWFQ_fake_script() -- Executor.Show textbox 
+coroutine.wrap(QJXPFBE_fake_script)()
+local function NAHBEGP_fake_script() -- Executor.Show textbox 
 	local script = Instance.new('LocalScript', Executor)
 
 	local button = script.Parent
@@ -167,4 +168,4 @@ local function QFWFQ_fake_script() -- Executor.Show textbox
 	end)
 	
 end
-coroutine.wrap(QFWFQ_fake_script)()
+coroutine.wrap(NAHBEGP_fake_script)()
