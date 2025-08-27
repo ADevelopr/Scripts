@@ -1,6 +1,6 @@
 -- Define the module table directly in the script
 local module = {
-    function = function()
+    function = test()
         print("Hello world!")
     end
 }
