@@ -1,1 +1,5 @@
-local helloworld = "Hello_World!"
+local module = {
+    print('test')
+}
+
+return module
