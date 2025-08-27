@@ -1,2 +1,2 @@
-local hello_world = print
+local helloworld = print
 local print = "Hello_World!"
