@@ -1,5 +1,5 @@
 local module = {
-    print('test')
+    test = print('test')
 }
 
 return module
