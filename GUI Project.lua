@@ -5,3 +5,6 @@ local module = {
 }
 
 return module
+
+local module = require(module)
+print(module.fuction)
