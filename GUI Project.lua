@@ -1,2 +1,1 @@
-local helloworld = print
-local print = "Hello_World!"
+local helloworld = "Hello_World!"
