@@ -1,5 +1,5 @@
 local module = {
-   local myfuction = function()
+   myfuction = function()
         print('test')
     end
 }
