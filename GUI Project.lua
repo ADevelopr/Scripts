@@ -1,5 +1,7 @@
 local module = {
-    test = print('test')
+   local myfuction = function()
+        print('test')
+    end
 }
 
 return module
