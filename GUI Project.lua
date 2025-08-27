@@ -1,6 +1,6 @@
 -- Define the module table directly in the script
-local module = {
-    function = test()
+local igiveup = {
+    test = function()
         print("Hello world!")
     end
 }
