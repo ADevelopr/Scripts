@@ -1,5 +1,4 @@
-local code = {
-    return function()
-        print("Hello from GitHub")
-    end
-}
+local function printMessage()
+    print('hello from the loadstring!')
+end
+return printMessage
