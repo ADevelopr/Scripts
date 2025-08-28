@@ -1,3 +1,3 @@
-local function myfuction()
-    print('hello world')
+local function myfunction()
+	print("Hello world!")
 end
