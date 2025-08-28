@@ -1,3 +1,3 @@
-local function myfunction()
-	print("Hello world!")
+return function()
+    print("Hello from GitHub")
 end
