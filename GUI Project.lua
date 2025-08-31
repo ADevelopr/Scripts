@@ -1,4 +1,7 @@
-local function printMessage()
-    print('hello from the loadstring!')
+local function test()
+	print("Hello from GitHub!")
 end
-return printMessage
+
+return {
+	test = test
+}
