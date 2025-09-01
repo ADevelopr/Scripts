@@ -1,7 +1,5 @@
-local function test()
-	print("Hello from GitHub!")
-end
+local function cal(num1, num2)
+	local res = num1 + num2
 
-return {
-	test = test
-}
+	return res
+end
