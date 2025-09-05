@@ -1,15 +1,29 @@
-	frame = function()
-		local ScreenGui = Instance.new('ScreenGui')
-		ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
-		ScreenGui.IgnoreGuiInset = true
-		ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-		
-		local Frame = Instance.new('Frame')
-		Frame.Parent = ScreenGui
-		Frame.BorderSizePixel = 0
-		Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
-		Frame.Size = UDim2.new(0, 100, 0, 100)
-		Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	end
+-- GUI Project.luau
 
-return frame
+local UILib = {}
+
+function UILib:Frame()
+    local ScreenGui = Instance.new("ScreenGui")
+    ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
+    ScreenGui.IgnoreGuiInset = true
+    ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+    local Frame = Instance.new("Frame")
+    Frame.Parent = ScreenGui
+    Frame.BorderSizePixel = 0
+    Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+    Frame.Size = UDim2.new(0, 100, 0, 100)
+    Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+    return Frame
+end
+
+-- later you can add more, e.g.:
+function UILib:Button(text)
+    local button = Instance.new("TextButton")
+    button.Text = text
+    button.Parent = game.Players.LocalPlayer.PlayerGui:WaitForChild("ScreenGui")
+    return button
+end
+
+return UILib
