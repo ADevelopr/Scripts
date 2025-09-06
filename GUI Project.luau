@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 15 | Scripts: 0 | Modules: 0 | Tags: 0
+-- Instances: 23 | Scripts: 0 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGUI.ScreenGui
@@ -129,6 +129,70 @@ G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 -- StarterGUI.ScreenGui.Tabs.TextButton.UICorner
 G2L["f"] = Instance.new("UICorner", G2L["e"]);
+
+
+
+-- StarterGUI.ScreenGui.Tabs.TextButton
+G2L["10"] = Instance.new("TextButton", G2L["2"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["Size"] = UDim2.new(0, 200, 0, 40);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGUI.ScreenGui.Tabs.TextButton.UICorner
+G2L["11"] = Instance.new("UICorner", G2L["10"]);
+
+
+
+-- StarterGUI.ScreenGui.Tabs.TextButton
+G2L["12"] = Instance.new("TextButton", G2L["2"]);
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["Size"] = UDim2.new(0, 200, 0, 40);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGUI.ScreenGui.Tabs.TextButton.UICorner
+G2L["13"] = Instance.new("UICorner", G2L["12"]);
+
+
+
+-- StarterGUI.ScreenGui.Tabs.TextButton
+G2L["14"] = Instance.new("TextButton", G2L["2"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["Size"] = UDim2.new(0, 200, 0, 40);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGUI.ScreenGui.Tabs.TextButton.UICorner
+G2L["15"] = Instance.new("UICorner", G2L["14"]);
+
+
+
+-- StarterGUI.ScreenGui.Tabs.TextButton
+G2L["16"] = Instance.new("TextButton", G2L["2"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["Size"] = UDim2.new(0, 200, 0, 40);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGUI.ScreenGui.Tabs.TextButton.UICorner
+G2L["17"] = Instance.new("UICorner", G2L["16"]);
 
 
 
